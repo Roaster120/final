@@ -556,39 +556,7 @@ void cronometro(int s, int m, int h)
     }
     getch();
 }
-void loop(char c[3][3]) //bluce que rota cada turno
-{
-    int i,j;
-    i=0;
-    intro_primera(c);
 
-    do
-    {
-        system("cls");
-        tablero(c);
-        if(i%2==0)
-        {
-            intro_yo(c);
-        }
-        else
-        {
-            intro_tu(c);
-        }
-        j=ganador(c);
-        i++;
-    }
-    while(i<=9 && j==2);
-    system("cls");
-    tablero(c);
-    if (j==0)
-    {
-        printf ("\ngana jugador uno");
-    }
-    else if (j==1)
-    {
-        printf("\ngana jugador dos ");
-    }
-}
 void intro_primera(char c[3][3])
 {
     int i,j;
@@ -986,6 +954,29 @@ int ganador(char c[3][3])
     }
     return (2);
 }
+void puntos(){
+        FILE *archivo;
+    int letra;
+    archivo= fopen("ganadas.txt","a");
+    fputc('c',archivo);
+    fclose(archivo);
+}
+void puntos2(){
+        FILE *archivo;
+    int letra;
+    archivo= fopen("ganadas_x.txt","a");
+    fputc('c',archivo);
+    fclose(archivo);
+}
+void puntos3(){
+        FILE *archivo;
+   int contador= 0;
+    archivo= fopen("ganadas_O.txt","a");
+    fputc('c',archivo);
+    fclose(archivo);
+}
+
+
 
 
 
