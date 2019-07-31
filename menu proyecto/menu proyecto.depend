@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1564519563 source:c:\users\hiamn\desktop\parche\menu proyecto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+	<time.h>
+	<math.h>
+	<windows.h>
+
+1564519532 c:\users\hiamn\desktop\parche\menu proyecto\funciones.h
+
+1564519563 source:c:\users\hiamn\desktop\parche\menu proyecto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"funciones.h"
+	<time.h>
+	<math.h>
+	<windows.h>
+
